@@ -25,9 +25,9 @@
     }
 
     .wrapper {
+      width: 95%;
       max-width: 1200px;
       margin: 0 auto;
-      width: 95%;
     }
 
     .head {
@@ -41,7 +41,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       gap: 30px;
     }
 
@@ -61,7 +60,7 @@
     }
 
     .menu {
-      width: 820px;
+      flex: 1;
       height: 34px;
     }
 
@@ -72,7 +71,7 @@
 
     .center1 {
       background-color: #F1F1F1;
-      padding: 40px 0;
+      padding: 80px 0;
       display: flex;
       align-items: center;
     }
@@ -81,7 +80,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       gap: 30px;
     }
 
@@ -104,50 +102,14 @@
       height: 520px;
     }
 
-    .center2 {
-      background-color: #FFFFFF;
-      padding-top: 24px;
-      padding-bottom: 24px;
-    }
-
-    .center2 .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .title {
-      border-radius: 8px;
-      background-color: #E2E2E2;
-      width: 600px;
-      height: 64px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    .item-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      width: 100%;
-    }
-
-    .item1 {
-      border-radius: 8px;
-      background-color: #E2E2E2;
-      height: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+    .center2,
     .center3,
     .center4 {
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding: 60px 0;
+    }
+
+    .center2 {
+      background-color: #FFFFFF;
     }
 
     .center3 {
@@ -158,41 +120,60 @@
       background-color: #FFFFFF;
     }
 
-    .center3 .wrapper,
-    .center4 .wrapper {
+    .content-block {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
       gap: 30px;
+    }
+
+    .title {
+      width: 600px;
+      height: 64px;
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 30px auto;
+    }
+
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
     }
 
     .item-wrapper {
       display: flex;
-      flex-direction: row;
-      gap: 30px;
       justify-content: space-between;
+      gap: 30px;
       width: 100%;
     }
 
-    .item2 {
+    .item1, .item2, .item3 {
       border-radius: 8px;
       background-color: #E2E2E2;
-      width: 216px;
-      height: 300px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    .item1 {
+      height: 420px;
+    }
+
+    .item2 {
+      width: 216px;
+      height: 300px;
+    }
+
     .item3 {
-      border-radius: 8px;
-      background-color: #E2E2E2;
       width: 277.5px;
       height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .footer {
@@ -230,39 +211,45 @@
 
     <div class="center2">
       <div class="wrapper">
-        <div class="title"><p>Title</p></div>
-        <div class="item-grid">
-          <div class="item1"><p>Item</p></div>
-          <div class="item1"><p>Item</p></div>
-          <div class="item1"><p>Item</p></div>
-          <div class="item1"><p>Item</p></div>
-          <div class="item1"><p>Item</p></div>
-          <div class="item1"><p>Item</p></div>
+        <div class="content-block">
+          <div class="title"><p>Title</p></div>
+          <div class="item-grid">
+            <div class="item1"><p>Item</p></div>
+            <div class="item1"><p>Item</p></div>
+            <div class="item1"><p>Item</p></div>
+            <div class="item1"><p>Item</p></div>
+            <div class="item1"><p>Item</p></div>
+            <div class="item1"><p>Item</p></div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="center3">
       <div class="wrapper">
-        <div class="title"><p>Title</p></div>
-        <div class="item-wrapper">
-          <div class="item2"><p>Item</p></div>
-          <div class="item2"><p>Item</p></div>
-          <div class="item2"><p>Item</p></div>
-          <div class="item2"><p>Item</p></div>
-          <div class="item2"><p>Item</p></div>
+        <div class="content-block">
+          <div class="title"><p>Title</p></div>
+          <div class="item-wrapper">
+            <div class="item2"><p>Item</p></div>
+            <div class="item2"><p>Item</p></div>
+            <div class="item2"><p>Item</p></div>
+            <div class="item2"><p>Item</p></div>
+            <div class="item2"><p>Item</p></div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="center4">
       <div class="wrapper">
-        <div class="title"><p style="font-family:'Lora', serif;">Title</p></div>
-        <div class="item-wrapper">
-          <div class="item3"><p>Item</p></div>
-          <div class="item3"><p>Item</p></div>
-          <div class="item3"><p>Item</p></div>
-          <div class="item3"><p>Item</p></div>
+        <div class="content-block">
+          <div class="title"><p style="font-family:'Lora', serif;">Title</p></div>
+          <div class="item-wrapper">
+            <div class="item3"><p>Item</p></div>
+            <div class="item3"><p>Item</p></div>
+            <div class="item3"><p>Item</p></div>
+            <div class="item3"><p>Item</p></div>
+          </div>
         </div>
       </div>
     </div>
