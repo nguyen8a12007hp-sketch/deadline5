@@ -1,15 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Example</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Be Vietnam Pro', sans-serif;
       font-weight: bold;
     }
@@ -22,13 +26,13 @@
     .wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 50px;
+      padding: 0 24px; /* giảm padding ngang */
       width: 100%;
     }
 
     .head {
       background-color: #FFFFFF;
-      height: 14vh;
+      padding: 20px 0; /* dùng padding thay vì height */
       display: flex;
       align-items: center;
     }
@@ -38,7 +42,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      gap: 50px;
+      gap: 24px; /* giảm khoảng cách giữa logo, menu, button */
     }
 
     .logo,
@@ -68,7 +72,7 @@
 
     .center1 {
       background-color: #F1F1F1;
-      height: 680px;
+      padding: 40px 0;
       display: flex;
       align-items: center;
     }
@@ -78,7 +82,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      gap: 50px;
+      gap: 24px; /* giảm khoảng cách content và image */
     }
 
     .content,
@@ -102,8 +106,8 @@
 
     .center2 {
       background-color: #FFFFFF;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
 
     .center2 .wrapper {
@@ -116,17 +120,17 @@
       border-radius: 8px;
       background-color: #E2E2E2;
       width: 600px;
-      height: 80px;
+      height: 64px; /* giảm chiều cao tiêu đề */
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 12px; /* giảm khoảng cách dưới */
     }
 
     .item-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 16px; /* giảm khoảng cách giữa item */
       width: 100%;
     }
 
@@ -141,18 +145,16 @@
 
     .center3,
     .center4 {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
 
     .center3 {
       background-color: #F1F1F1;
-      height: 580px;
     }
 
     .center4 {
       background-color: #FFFFFF;
-      height: 565px;
     }
 
     .center3 .wrapper,
@@ -161,16 +163,15 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100%;
+      gap: 12px;
     }
 
     .item-wrapper {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 16px; /* giảm khoảng cách giữa các item2, item3 */
       justify-content: space-between;
       width: 100%;
-      margin-bottom: 20px;
     }
 
     .item2 {
@@ -194,7 +195,7 @@
     }
 
     .footer {
-      height: 14vh;
+      padding: 20px 0;
       background-color: #F1F1F1;
       display: flex;
       align-items: center;
@@ -255,7 +256,7 @@
 
     <div class="center4">
       <div class="wrapper">
-        <div class="title"><p style = "font-family:'Lora', serif;">Title</p></div>
+        <div class="title"><p style="font-family:'Lora', serif;">Title</p></div>
         <div class="item-wrapper">
           <div class="item3"><p>Item</p></div>
           <div class="item3"><p>Item</p></div>
